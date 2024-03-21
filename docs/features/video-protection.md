@@ -11,7 +11,7 @@ This article outlines how such an authorization service should work.
 
 ## Signed URLs
 
-With [URL signing](https://support.jwplayer.com/articles/how-to-enable-url-token-signing) enabled on the JW property, a video client can only access the media URLs from JW backends when it has a valid JWT token:
+With [URL signing](https://docs.jwplayer.com/platform/reference/protect-your-content-with-signed-urls) enabled on the JW property, a video client can only access the media URLs from JW backends when it has a valid JWT token:
 
 ```
 GET media/PEEzDfdA?token=<tokenA>
@@ -93,7 +93,9 @@ Note that there are many variations of these access models.
 
 ### Free content
 
-It's possible to have free content. This is indicated with media parameter `free` (`requiresSubscription` param is deprecated, accepted values are 'false', 'no' and '0'). As a possible value for `free` param you can use 'true', 'yes' (lower- or uppercase) or '1' number.
+It's possible to have free content. This is indicated with media parameter `free`. As a possible value for `free` param you can use 'true', 'yes', 'on', or the number '1' as a string (also all case-insensitive).
+
+> Note: The `requiresSubscription` param with accepted values of 'false', 'no', 'off', and '0' (all case-insensitive) is deprecated
 
 ### Users and entitlements
 
