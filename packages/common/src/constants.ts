@@ -21,7 +21,7 @@ export const VideoProgressMinMax = {
   Max: 0.95,
 };
 
-export const PLAYLIST_LIMIT = 25;
+export const PLAYLIST_LIMIT = 75;
 
 export const ADYEN_TEST_CLIENT_KEY = 'test_I4OFGUUCEVB5TI222AS3N2Y2LY6PJM3K';
 
